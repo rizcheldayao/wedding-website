@@ -1,0 +1,20 @@
+.header {
+  background-color: lightgrey;
+  height: 500px;
+  width: 100%; }
+
+.countdown {
+  margin: 1rem; }
+
+*::after, *::before {
+  box-sizing: border-box; }
+
+#id {
+  display: flex;
+  height: 100%; }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }

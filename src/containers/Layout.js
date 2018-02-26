@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 class Layout extends Component {
   render () {
     return (
       <div className='layout'>
-        <h1>Wedding website</h1>
+        <Header />
       </div>
     );
   }
