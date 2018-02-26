@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import Layout from "./containers/Layout";
+import React, { Component } from 'react';
+import Layout from './containers/Layout';
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <Layout />
-    );
+    )
   }
 }
 
-export default App;
+export default App

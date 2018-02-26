@@ -1,14 +1,12 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
 
- class Layout extends Component {
-  render() {
-
+class Layout extends Component {
+  render () {
     return (
-      <div className="layout">
+      <div className='layout'>
         <h1>Wedding website</h1>
       </div>
     );
   }
 }
-export default Counter;
+export default Layout;

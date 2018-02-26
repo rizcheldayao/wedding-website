@@ -1,6 +1,7 @@
 {
-  "extends": "airbnb",
-  "plugins": [
-      "react"
-  ]
+  "extends": ["standard", "standard-react"],
+  "rules": {
+    "comma-dangle": 0,
+    "semi": 0
+  }
 }
