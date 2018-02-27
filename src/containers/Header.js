@@ -7,6 +7,7 @@ class Header extends Component {
       <div className='header'>
         <h1>Oliver and Rizchel are getting married in...</h1>
         <Countdown />
+        <h1>4.19.2019</h1>
       </div>
     );
   }

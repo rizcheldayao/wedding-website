@@ -30,6 +30,20 @@
     font-size: 42px;
     font-weight: 800; }
 
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 2rem 1rem;
+  border-bottom: 1px solid #827e7c; }
+  .navigation ul li {
+    padding: 0 1rem;
+    color: #827e7c; }
+    .navigation ul li:hover {
+      cursor: pointer; }
+
 *::after, *::before {
   box-sizing: border-box; }
 
