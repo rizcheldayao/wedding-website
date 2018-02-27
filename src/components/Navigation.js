@@ -7,10 +7,9 @@ class Navigation extends Component {
         <ul>
           <li>About</li>
           <li>Wedding</li>
-          <li>Registry</li>
+          <li>Gallery</li>
           <li>RSVP</li>
-          <li>Travel</li>
-          <li>Activities</li>
+          <li>Travel & Activities</li>
         </ul>
       </div>
     );

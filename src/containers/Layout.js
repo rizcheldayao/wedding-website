@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Navigation from './Navigation';
+import Navigation from '../components/Navigation';
+import About from '../components/About';
 
 class Layout extends Component {
   render () {
@@ -8,6 +9,7 @@ class Layout extends Component {
       <div className='layout'>
         <Header />
         <Navigation />
+        <About />
       </div>
     );
   }

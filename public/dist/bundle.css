@@ -44,6 +44,38 @@
     .navigation ul li:hover {
       cursor: pointer; }
 
+.about {
+  display: flex;
+  margin: 2rem; }
+  .about-groom, .about-bride {
+    padding: 0 2rem 0 2rem;
+    display: flex; }
+  .about-details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem; }
+  .about-break {
+    background-color: #d3d3d3;
+    height: 150px;
+    text-align: center; }
+    .about-break h1 {
+      padding-top: 65px; }
+  .about-story {
+    margin: 5rem; }
+  .about-party {
+    background-color: #d3d3d3;
+    padding: 2rem; }
+    .about-party h2 {
+      text-align: center; }
+  .about-images {
+    display: flex;
+    justify-content: center; }
+  .about .placeholder {
+    background-color: #d3d3d3;
+    width: 250px;
+    height: 300px; }
+
 *::after, *::before {
   box-sizing: border-box; }
 

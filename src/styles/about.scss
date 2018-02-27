@@ -1,0 +1,50 @@
+.about {
+  display: flex;
+  margin: 2rem;
+
+  &-groom, &-bride {
+    padding: 0 2rem 0 2rem;
+    display: flex;
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem;
+  }
+
+  &-break {
+    background-color: #d3d3d3;
+    height: 150px;
+    text-align: center;
+
+    h1 {
+      padding-top: 65px;
+    }
+  }
+
+  &-story {
+    margin: 5rem;
+  }
+
+  &-party {
+    background-color: #d3d3d3;
+    padding: 2rem;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  &-images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .placeholder {
+    background-color: #d3d3d3;
+    width: 250px;
+    height: 300px;
+  }
+}
