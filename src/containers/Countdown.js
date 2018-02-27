@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Circle from '../components/Circle';
 
 class Countdown extends Component {
   constructor (props) {
@@ -10,6 +11,8 @@ class Countdown extends Component {
       hours: 0,
       minutes: 0,
       seconds: 0,
+      times: [0, 0, 0, 0],
+      list: null,
     }
     this.timeSet = this.timeSet.bind(this);
   }
@@ -36,17 +39,22 @@ class Countdown extends Component {
       hours: hours,
       minutes: minutes,
       seconds: seconds,
+      times: [days, hours, minutes, seconds],
+    });
+    const arrayOrder = ['days', 'hours', 'minutes', 'seconds'];
+    const listView = this.state.times.map((time, index) => {
+      return <Circle value={time} label={arrayOrder[index]} />
+    });
+    this.setState({
+      list: listView,
     });
   }
 
   render () {
-    const { days, hours, minutes, seconds } = this.state;
+    const { list } = this.state;
     return (
       <div className='countdown'>
-        <p>{`${days} days`}</p>
-        <p>{`${hours} hours`}</p>
-        <p>{`${minutes} minutes`}</p>
-        <p>{`${seconds} seconds`}</p>
+        {list}
       </div>
     );
   }

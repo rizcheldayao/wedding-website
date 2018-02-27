@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Countdown from '../components/Countdown';
+import Countdown from './Countdown';
 
 class Header extends Component {
   render () {
     return (
       <div className='header'>
-        Oliver and Rizchel are getting married in...
+        <h1>Oliver and Rizchel are getting married in...</h1>
         <Countdown />
       </div>
     );
