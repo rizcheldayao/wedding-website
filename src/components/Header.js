@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Countdown from './Countdown';
+import Countdown from '../containers/Countdown';
 
 class Header extends Component {
   render () {

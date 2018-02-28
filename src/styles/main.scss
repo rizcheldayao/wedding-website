@@ -1,6 +1,8 @@
 @import './header';
 @import './nav';
 @import './about';
+@import './wedding';
+@import './gallery';
 
 * {
   &::after,
@@ -9,7 +11,7 @@
   }
 }
 
-#id {
+main {
   display: flex;
   height: 100%;
 }
@@ -19,4 +21,8 @@ body {
   height: 100%;
   margin:0;
   padding:0;
+}
+
+.layout {
+  width: 100%
 }

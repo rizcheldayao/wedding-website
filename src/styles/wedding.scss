@@ -1,0 +1,59 @@
+.wedding {
+  text-align: center;
+}
+
+.details {
+  &-map {
+    background-color: #d3d3d3;
+    width: 1000px;
+  }
+
+  &-section {
+    display: flex;
+    justify-content:center;
+    margin-top: 1rem;
+  }
+
+  &-reception, &-ceremony {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    padding: 1rem;
+
+    svg {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+.timeline {
+  background-color: #d3d3d3;
+  width: 100%;
+  height: 250px;
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.registry {
+  background-color: #d3d3d3;
+  padding: 1rem;
+  width: 100%;
+
+  &-stores {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+  }
+
+  &-square {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    margin: 1rem;
+  }
+}

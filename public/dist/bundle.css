@@ -76,10 +76,57 @@
     width: 250px;
     height: 300px; }
 
+.wedding {
+  text-align: center; }
+
+.details-map {
+  background-color: #d3d3d3;
+  width: 1000px; }
+
+.details-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; }
+
+.details-reception, .details-ceremony {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  padding: 1rem; }
+  .details-reception svg, .details-ceremony svg {
+    display: block;
+    margin: auto; }
+
+.timeline {
+  background-color: #d3d3d3;
+  width: 100%;
+  height: 250px;
+  padding: 1rem; }
+  .timeline h1 {
+    text-align: center; }
+
+.registry {
+  background-color: #d3d3d3;
+  padding: 1rem;
+  width: 100%; }
+  .registry-stores {
+    display: flex;
+    margin: 1rem;
+    justify-content: center; }
+  .registry-square {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    margin: 1rem; }
+
+.gallery {
+  text-align: center; }
+
 *::after, *::before {
   box-sizing: border-box; }
 
-#id {
+main {
   display: flex;
   height: 100%; }
 
@@ -88,3 +135,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0; }
+
+.layout {
+  width: 100%; }

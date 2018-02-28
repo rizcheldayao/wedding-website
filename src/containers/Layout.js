@@ -1,15 +1,37 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Navigation from '../components/Navigation';
+import Header from '../components/Header';
+import Navigation from './Navigation';
 import About from '../components/About';
+import Wedding from '../components/Wedding';
+import Gallery from '../components/Gallery';
 
 class Layout extends Component {
+  constructor (props) {
+    super(props)
+    const navOptions = ['About', 'Wedding', 'Gallery', 'RSVP', 'Travel & Activities'];
+    this.state = {
+      selectedNav: 'About',
+      navOptions: navOptions,
+    }
+    this.setNav = this.setNav.bind(this);
+  }
+
+  setNav (e) {
+    const selectedOption = e.target.innerHTML;
+    this.setState({
+      selectedNav: selectedOption,
+    });
+  }
+
   render () {
+    const { navOptions, selectedNav } = this.state;
     return (
       <div className='layout'>
         <Header />
-        <Navigation />
-        <About />
+        <Navigation setNav={this.setNav} navOptions={navOptions} />
+        {selectedNav === 'About' && <About />}
+        {selectedNav === 'Wedding' && <Wedding />}
+        {selectedNav === 'Gallery' && <Gallery />}
       </div>
     );
   }
