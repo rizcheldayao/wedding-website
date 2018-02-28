@@ -123,6 +123,9 @@
 .gallery {
   text-align: center; }
 
+.rsvp {
+  text-align: center; }
+
 *::after, *::before {
   box-sizing: border-box; }
 

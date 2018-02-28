@@ -4,6 +4,7 @@ import Navigation from './Navigation';
 import About from '../components/About';
 import Wedding from '../components/Wedding';
 import Gallery from '../components/Gallery';
+import RSVP from '../components/RSVP';
 
 class Layout extends Component {
   constructor (props) {
@@ -32,6 +33,7 @@ class Layout extends Component {
         {selectedNav === 'About' && <About />}
         {selectedNav === 'Wedding' && <Wedding />}
         {selectedNav === 'Gallery' && <Gallery />}
+        {selectedNav === 'RSVP' && <RSVP />}
       </div>
     );
   }
