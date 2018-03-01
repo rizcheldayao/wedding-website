@@ -1,5 +1,23 @@
+@import 'variables.scss';
+
 .wedding {
   text-align: center;
+  color: $black;
+  padding-top: 1rem;
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png");
+
+  h3 {
+    font-family: $playfair-display;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  h4 {
+    font-family: $great-vibes;
+    margin: 0;
+  }
+
 }
 
 .details {
@@ -20,12 +38,27 @@
     flex-direction: column;
     width: 25%;
     padding: 1rem;
+    background-color: $white;
 
     svg {
       display: block;
       margin: auto;
     }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-family: $playfair-display;
+    }
   }
+
+  // &-reception {
+  //   background-color: $rose-gold;
+  // }
+
+  // &-ceremony {
+  //   background-color: $cream;
+  // }
 }
 
 .timeline {

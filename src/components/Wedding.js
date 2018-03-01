@@ -7,8 +7,8 @@ class Wedding extends Component {
   render () {
     return (
       <div className='wedding'>
-        <h1>Event Details</h1>
-        <p>When & where</p>
+        <h3>Event Details</h3>
+        <h4>When & where</h4>
         <Details />
         <Timeline />
         <section className='wedding-instagram'>
