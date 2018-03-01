@@ -18,6 +18,18 @@
     margin: 0;
   }
 
+  &-instagram {
+    background-color: $white;
+    padding: 2rem;
+  }
+
+  &-card {
+    background-color: $rose-gold;
+
+    max-width: 500px;
+    padding: 1rem;
+  }
+
 }
 
 .details {
@@ -37,12 +49,17 @@
     justify-content: center;
     flex-direction: column;
     width: 25%;
-    padding: 1rem;
+    padding: 4rem;
     background-color: $white;
 
     svg {
       display: block;
       margin: auto;
+      background-color: $rose-gold;
+      border-radius: 50%;
+      overflow: visible;
+      padding: 15px;
+      margin-bottom: 1rem;
     }
 
     p {
@@ -50,26 +67,19 @@
       padding: 0;
       font-family: $playfair-display;
     }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+    }
   }
-
-  // &-reception {
-  //   background-color: $rose-gold;
-  // }
-
-  // &-ceremony {
-  //   background-color: $cream;
-  // }
 }
 
 .timeline {
-  background-color: #d3d3d3;
+  display: flex;
   width: 100%;
   height: 250px;
-  padding: 1rem;
-
-  h1 {
-    text-align: center;
-  }
+  padding: 5rem 0;
 }
 
 .registry {

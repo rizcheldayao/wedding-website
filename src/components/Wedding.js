@@ -12,11 +12,13 @@ class Wedding extends Component {
         <Details />
         <Timeline />
         <section className='wedding-instagram'>
-          <h4>Help us document our wedding! Copy the hastag below and share your Instagram photos with us.</h4>
-          <svg height='100' width='100'>
-            <circle cx='50' cy='50' r='40' stroke='black' strokeWidth='3' fill='white' />
-          </svg>
-          <p>#woodyoubemine</p>
+          <div className="wedding-card">
+            <h4>Help us document our wedding! Copy the hastag below and share your Instagram photos with us.</h4>
+            <svg height='100' width='100'>
+              <circle cx='50' cy='50' r='40' stroke='black' strokeWidth='3' fill='white' />
+            </svg>
+            <p>#twobecomewood</p>
+          </div>
         </section>
         <Registry />
       </div>
