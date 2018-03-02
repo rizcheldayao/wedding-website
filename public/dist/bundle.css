@@ -94,9 +94,34 @@
       font-family: "Playfair Display", serif;
       text-transform: uppercase;
       font-weight: 400; }
-  .about-images {
+      .about-party h3:nth-child(1) {
+        border-top: 2px solid #f7d0cb;
+        padding-top: 1rem; }
+  .about-images, .about-images-2 {
     display: flex;
-    justify-content: center; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .about-images-2 {
+    border-bottom: 2px solid #f7d0cb;
+    padding-bottom: 2rem; }
+  .about-circle {
+    overflow: hidden;
+    max-height: 150px; }
+    .about-circle img {
+      border-radius: 50%;
+      min-height: 150px; }
+  .about-role h4, .about-role p {
+    padding: 0;
+    margin: 0;
+    text-align: center; }
+  .about-role h4 {
+    color: #f7d0cb;
+    font-family: "Great Vibes", Helvetica, sans-serif;
+    font-size: 28px;
+    padding-top: 1rem; }
+  .about-role p {
+    font-family: "Playfair Display", serif;
+    color: #313131; }
   .about .placeholder {
     background-color: #d3d3d3;
     width: 250px;

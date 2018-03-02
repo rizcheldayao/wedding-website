@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
 import Data from '../data/data.json';
+import ShannelleImage from '../images/shannelle.jpg';
+import MaddieImage from '../images/maddie.jpg';
+import EmilyImage from '../images/emily.jpg';
+import JenImage from '../images/jen.jpg';
+import MariImage from '../images/mari.jpg';
+import JamesImage from '../images/james.jpg';
+import BenImage from '../images/ben.jpg';
+import TJImage from '../images/tj.jpg';
+import LewisImage from '../images/lewis.jpg';
+import JoeImage from '../images/joe.png';
 
 class About extends Component {
   render () {
@@ -57,19 +67,99 @@ class About extends Component {
         <section className='about-party'>
           <h3>The groomsmen</h3>
           <div className='about-images'>
-            <div className='circle' />
-            <div className='circle' />
-            <div className='circle' />
-            <div className='circle' />
-            <div className='circle' />
+            <div className='about-person'>
+              <div className='about-circle'>
+                <img src={JamesImage} />
+              </div>
+              <div className='about-role'>
+                <h4>Best Man</h4>
+                <p>James Townsend</p>
+              </div>
+            </div>
+            <div className='about-person'>
+              <div className='about-circle'>
+                <img src={JoeImage} />
+              </div>
+              <div className='about-role'>
+                <h4>Best Man</h4>
+                <p>Joe Nalson</p>
+              </div>
+            </div>
+            <div className='about-person'>
+              <div className='about-circle'>
+                <img src={TJImage} />
+              </div>
+              <div className='about-role'>
+                <h4>Groomsman</h4>
+                <p>TJ Egan</p>
+              </div>
+            </div>
+            <div className='about-person'>
+              <div className='about-circle'>
+                <img src={BenImage} />
+              </div>
+              <div className='about-role'>
+                <h4>Groomsman</h4>
+                <p>Ben Woolsey</p>
+              </div>
+            </div>
+            <div className='about-person'>
+              <div className='about-circle'>
+                <img src={LewisImage} />
+              </div>
+              <div className='about-role'>
+                <h4>Groomsman</h4>
+                <p>Lewis Lines</p>
+              </div>
+            </div>
           </div>
           <h3>The bridesmaids</h3>
-          <div className='about-images'>
-            <div className='circle' />
-            <div className='circle' />
-            <div className='circle' />
-            <div className='circle' />
-            <div className='circle' />
+          <div className='about-images-2'>
+            <div className='about-person'>
+              <div className='about-circle'>
+                <img src={ShannelleImage} />
+              </div>
+              <div className='about-role'>
+                <h4>Maid of Honor</h4>
+                <p>Shannelle Lopez</p>
+              </div>
+            </div>
+            <div className='about-person'>
+              <div className='about-circle'>
+                <img src={MaddieImage} />
+              </div>
+              <div className='about-role'>
+                <h4>Bridesmaid</h4>
+                <p>Maddie Hald</p>
+              </div>
+            </div>
+            <div className='about-person'>
+              <div className='about-circle'>
+                <img src={MariImage} />
+              </div>
+              <div className='about-role'>
+                <h4>Bridesmaid</h4>
+                <p>Mari Johannessen</p>
+              </div>
+            </div>
+            <div className='about-person'>
+              <div className='about-circle'>
+                <img src={JenImage} />
+              </div>
+              <div className='about-role'>
+                <h4>Bridesmaid</h4>
+                <p>Jennifer Veatch</p>
+              </div>
+            </div>
+            <div className='about-person'>
+              <div className='about-circle'>
+                <img src={EmilyImage} />
+              </div>
+              <div className='about-role'>
+                <h4>Bridesmaid</h4>
+                <p>Emily Dodson</p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
