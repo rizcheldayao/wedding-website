@@ -4,12 +4,11 @@ import Navigation from './Navigation';
 import About from '../components/About';
 import Wedding from '../components/Wedding';
 import Gallery from '../components/Gallery';
-import RSVP from '../components/RSVP';
 
 class Layout extends Component {
   constructor (props) {
     super(props)
-    const navOptions = ['About', 'Wedding', 'Gallery', 'RSVP', 'Travel & Activities'];
+    const navOptions = ['About', 'Wedding', 'Gallery', 'Travel & Activities'];
     this.state = {
       selectedNav: 'About',
       navOptions: navOptions,
@@ -33,7 +32,6 @@ class Layout extends Component {
         {selectedNav === 'About' && <About />}
         {selectedNav === 'Wedding' && <Wedding />}
         {selectedNav === 'Gallery' && <Gallery />}
-        {selectedNav === 'RSVP' && <RSVP />}
       </div>
     );
   }

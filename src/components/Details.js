@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Data from '../data/data.json';
 
 class Details extends Component {
   render () {
@@ -15,10 +16,10 @@ class Details extends Component {
                 </g>
               </svg>
             </div>
-            <h3>Ceremony</h3>
-            <h4>Buena Vista Winery</h4>
-            <p>April 19, 2019 at 5pm</p> <br />
-            <p>18000 Old Winery Rd, Sonoma, CA 95476</p>
+            <h3>{Data.ceremony}</h3>
+            <h4>{Data.location}</h4>
+            <p>{Data.date}</p> <br />
+            <p>{Data.address}</p>
           </section>
           <section className='details-map' />
           <section className='details-reception'>
@@ -31,10 +32,10 @@ class Details extends Component {
                 </g>
               </svg>
             </div>
-            <h3>Reception</h3>
-            <h4>Buena Vista Winery</h4>
-            <p>April 19, 2019 at 6:30pm</p> <br />
-            <p>18000 Old Winery Rd, Sonoma, CA 95476</p>
+            <h3>{Data.reception}</h3>
+            <h4>{Data.location}</h4>
+            <p>{Data.receptionTime}</p> <br />
+            <p>{Data.address}</p>
           </section>
         </div>
       </div>

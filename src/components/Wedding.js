@@ -2,23 +2,21 @@ import React, { Component } from 'react';
 import Details from './Details';
 import Timeline from './Timeline';
 import Registry from './Registry';
+import Instagram from './Instagram';
+import RSVP from './RSVP';
+import Data from '../data/data.json';
 
 class Wedding extends Component {
   render () {
     return (
       <div className='wedding'>
-        <h3>Event Details</h3>
-        <h4>When & where</h4>
+        <h3>{Data.eventDetails}</h3>
+        <h4>{Data.whenWhere}</h4>
         <Details />
         <Timeline />
-        <section className='wedding-instagram'>
-          <div className="wedding-card">
-            <h4>Help us document our wedding! Copy the hastag below and share your Instagram photos with us.</h4>
-            <svg height='100' width='100'>
-              <circle cx='50' cy='50' r='40' stroke='black' strokeWidth='3' fill='white' />
-            </svg>
-            <p>#twobecomewood</p>
-          </div>
+        <section className='wedding-cards'>
+          <Instagram />
+          <RSVP />
         </section>
         <Registry />
       </div>

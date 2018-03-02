@@ -18,18 +18,14 @@
     margin: 0;
   }
 
-  &-instagram {
-    background-color: $rose-gold;
-    padding: 2rem;
+  p {
+    font-family: $playfair-display;
   }
 
-  // &-card {
-  //   background-color: $rose-gold;
-
-  //   max-width: 500px;
-  //   padding: 1rem;
-  // }
-
+  &-cards {
+    background-color: $rose-gold;
+    display: flex;
+  }
 }
 
 .details {
@@ -78,12 +74,12 @@
 .timeline {
   display: flex;
   width: 100%;
-  height: 250px;
   padding: 5rem 0;
 }
 
 .registry {
-  background-color: #d3d3d3;
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png");
   padding: 1rem;
   width: 100%;
 
@@ -94,9 +90,48 @@
   }
 
   &-square {
-    width: 200px;
-    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
     background-color: #fff;
     margin: 1rem;
+
+    &:hover {
+      box-shadow: 10px 5px 5px $grey;
+    }
+  }
+
+  &-amazon {
+    padding: 5rem 3.5rem;
+  }
+
+  &-target {
+    padding: 3rem 4rem;
+  }
+}
+
+.instagram {
+  border-right: 1px solid $white;
+}
+
+.instagram, .rsvp {
+  width: 50%;
+  padding:2rem;
+
+  button {
+    width: 150px;
+    height: 40px;
+    background-color: $rose-gold;
+    border: 2px solid $white;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $rose-gold;
+    }
+  }
+
+  h3 {
+    text-transform: none;
+    font-weight: 400;
   }
 }

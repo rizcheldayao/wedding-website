@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
+import Data from '../data/data.json';
 
 class RSVP extends Component {
   render () {
     return (
       <div className='rsvp'>
-        <section className='rsvp-card'>
-          <h1>Will you joining us?</h1>
-          <p>Please sign your RSVP</p>
-          <p>Add rspvify</p>
-        </section>
+        <h3>{Data.rsvpTitle}</h3>
+        <p>{Data.rsvpSubtitle}</p>
+        <button className='rsvp-button'>{Data.rsvp}</button>
       </div>
     );
   }

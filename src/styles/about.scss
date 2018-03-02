@@ -1,10 +1,48 @@
+@import '_variables.scss';
+
+.bio {
+  &-svg {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 2rem;
+  }
+}
+
 .about {
   display: flex;
-  margin: 2rem;
+  margin: 1rem 2rem 2rem 2rem;
+  font-family: $playfair-display;
+  color: $black;
 
   &-groom, &-bride {
-    padding: 0 2rem 0 2rem;
+    padding: 1rem 0 1rem 0;
     display: flex;
+    border-top: 2px solid $rose-gold;
+    border-bottom: 2px solid $rose-gold;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 36px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  &-groom {
+    justify-content: flex-start;
+  }
+
+  &-bride {
+    justify-content: flex-end;
+  }
+
+  &-yes {
+    color: $rose-gold;
+
+    svg {
+      padding-left: 10px;
+    }
   }
 
   &-details {
@@ -15,31 +53,42 @@
   }
 
   &-break {
-    background-color: #d3d3d3;
-    height: 150px;
+    background-color: $rose-gold;
+    padding: 2rem;
     text-align: center;
 
     h1 {
-      padding-top: 65px;
+      font-size: 48px;
+      font-family: $great-vibes;
     }
   }
 
   &-story {
-    margin: 5rem;
+    padding: 5rem;
+    background-color: $grey;
   }
 
   &-party {
-    background-color: #d3d3d3;
+    background-color: $white;
     padding: 2rem;
 
-    h2 {
+    h3 {
       text-align: center;
+      font-family: $playfair-display;
+      text-transform: uppercase;
+      font-weight: 400;
     }
   }
 
   &-images {
     display: flex;
     justify-content: center;
+
+    // img {
+    //   border-radius: 50%;
+    //   border: 5px solid $rose-gold;
+    //   margin: 1rem;
+    // }
   }
 
   .placeholder {

@@ -23,6 +23,16 @@ module.exports = {
           presets: ['react', 'stage-0', 'es2015'],
           plugins: ['transform-class-properties', 'transform-decorators-legacy']
         }
+      },
+      {
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 8000,
+            name: 'images/[hash]-[name].[ext]'
+          }
+        }]
       }
     ]
   },
