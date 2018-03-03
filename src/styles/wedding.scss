@@ -1,32 +1,26 @@
 @import 'variables.scss';
+@import 'mixins.scss';
 
 .wedding {
   text-align: center;
   color: $black;
   padding-top: 1rem;
   background-color: $white;
+  font-family: $playfair-display;
+
+  h1, h3 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+  }
 
   h1 {
-    font-family: $playfair-display;
-    text-transform: uppercase;
-    margin: 0;
-    font-weight: 400;
     font-size: 36px;
-  }
-  h3 {
-    font-family: $playfair-display;
-    text-transform: uppercase;
-    margin: 0;
-    font-weight: 400;
   }
 
   h4 {
     font-family: $great-vibes;
     margin: 0;
-  }
-
-  p {
-    font-family: $playfair-display;
   }
 
   &-cards {
@@ -53,8 +47,7 @@
     flex-direction: column;
     width: 25%;
     padding: 4rem;
-    background-color: $white;
-    background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png");
+    @include background;
 
     svg {
       display: block;
@@ -86,8 +79,7 @@
 }
 
 .registry {
-  background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png");
+  @include background;
   padding: 1rem;
   width: 100%;
 
@@ -100,7 +92,7 @@
   &-square {
     min-width: 200px;
     min-height: 200px;
-    background-color: #fff;
+    background-color: $white;
     margin: 1rem;
 
     &:hover {

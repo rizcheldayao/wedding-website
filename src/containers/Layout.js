@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import Navigation from './Navigation';
-import About from '../components/About';
+import About from './About';
 import Wedding from '../components/Wedding';
 import Gallery from '../components/Gallery';
 

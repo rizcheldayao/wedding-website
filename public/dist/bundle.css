@@ -5,7 +5,7 @@
   text-align: center; }
   .header h1 {
     margin: 0;
-    color: white; }
+    color: #fff; }
 
 .countdown {
   margin: 1rem;
@@ -15,9 +15,9 @@
 
 .circle {
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid #fff;
   margin: 1rem;
-  color: white;
+  color: #fff;
   text-align: center;
   height: 175px;
   width: 175px; }
@@ -76,11 +76,11 @@
     flex-direction: column;
     width: 50%;
     padding: 1rem; }
-  .about-break {
+  .about-start {
     background-color: #f7d0cb;
     padding: 2rem;
     text-align: center; }
-    .about-break h1 {
+    .about-start h1 {
       font-size: 48px;
       font-family: "Great Vibes", Helvetica, sans-serif; }
   .about-party {
@@ -134,9 +134,9 @@
   .about-us {
     background-color: #fff;
     padding: 2rem;
-    text-align: center; }
+    text-align: center;
+    font-family: "Playfair Display", serif; }
     .about-us h1, .about-us h4 {
-      font-family: "Playfair Display", serif;
       margin: 0;
       padding: 0;
       font-weight: 400; }
@@ -146,7 +146,6 @@
       font-size: 36px;
       text-transform: uppercase; }
     .about-us P {
-      font-family: "Playfair Display", serif;
       border-bottom: 2px solid #f7d0cb;
       padding-bottom: 2rem; }
 
@@ -154,23 +153,17 @@
   text-align: center;
   color: #313131;
   padding-top: 1rem;
-  background-color: #fff; }
-  .wedding h1 {
-    font-family: "Playfair Display", serif;
-    text-transform: uppercase;
-    margin: 0;
-    font-weight: 400;
-    font-size: 36px; }
-  .wedding h3 {
-    font-family: "Playfair Display", serif;
+  background-color: #fff;
+  font-family: "Playfair Display", serif; }
+  .wedding h1, .wedding h3 {
     text-transform: uppercase;
     margin: 0;
     font-weight: 400; }
+  .wedding h1 {
+    font-size: 36px; }
   .wedding h4 {
     font-family: "Great Vibes", Helvetica, sans-serif;
     margin: 0; }
-  .wedding p {
-    font-family: "Playfair Display", serif; }
   .wedding-cards {
     background-color: #f7d0cb;
     display: flex; }

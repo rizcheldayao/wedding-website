@@ -11,6 +11,59 @@ import TJImage from '../images/tj.jpg';
 import LewisImage from '../images/lewis.jpg';
 import JoeImage from '../images/joe.png';
 import AboutTimeline from '../images/timeline.svg';
+import Person from '../components/Person';
+
+const groomsmenList = [{
+  img: JamesImage,
+  title: 'Best Man',
+  name: 'James Townsend',
+},
+{
+  img: JoeImage,
+  title: 'Best Man',
+  name: 'Joe Nalson',
+},
+{
+  img: TJImage,
+  title: 'Groomsman',
+  name: 'TJ Egan',
+},
+{
+  img: BenImage,
+  title: 'Groomsman',
+  name: 'Ben Woolsey',
+},
+{
+  img: LewisImage,
+  title: 'Groomsman',
+  name: 'Lewis Lines',
+}];
+
+const bridesmaidList = [{
+  img: ShannelleImage,
+  title: 'Maid of Honor',
+  name: 'Shannelle Lopez',
+},
+{
+  img: MaddieImage,
+  title: 'Bridesmaid',
+  name: 'Maddie Hald',
+},
+{
+  img: MariImage,
+  title: 'Bridesmaid',
+  name: 'Mari Johannessen',
+},
+{
+  img: JenImage,
+  title: 'Bridesmaid',
+  name: 'Jennifer Veatch',
+},
+{
+  img: EmilyImage,
+  title: 'Bridesmaid',
+  name: 'Emily Dodson',
+}];
 
 class About extends Component {
   render () {
@@ -31,7 +84,7 @@ class About extends Component {
             <article className='about-details'>
               <h1>{Data.he}</h1>
               <h1>{Data.proposed}</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>{Data.fake}}</p>
             </article>
             <div className='placeholder' />
           </section>
@@ -55,117 +108,37 @@ class About extends Component {
                     </g>
                   </g>
                 </svg></span></h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>{Data.fake}}</p>
             </article>
           </section>
         </div>
-        <section className='about-break'>
-          <h1>We started our happily ever after on July 17, 2016...</h1>
+        <section className='about-start'>
+          <h1>{Data.start}</h1>
         </section>
         <section className='about-us'>
-          <h1>- Our story - </h1>
-          <h4>Future Mr. & Mrs. Wood</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h1>{Data.ourStory}</h1>
+          <h4>{Data.futureWood}</h4>
+          <p>{Data.fake}</p>
         </section>
         <section className='about-story'>
           <img src={AboutTimeline} />
         </section>
         <section className='about-party'>
-          <h3>The groomsmen</h3>
+          <h3>{Data.groomsmen}</h3>
           <div className='about-images'>
-            <div className='about-person'>
-              <div className='about-circle'>
-                <img src={JamesImage} />
-              </div>
-              <div className='about-role'>
-                <h4>Best Man</h4>
-                <p>James Townsend</p>
-              </div>
-            </div>
-            <div className='about-person'>
-              <div className='about-circle'>
-                <img src={JoeImage} />
-              </div>
-              <div className='about-role'>
-                <h4>Best Man</h4>
-                <p>Joe Nalson</p>
-              </div>
-            </div>
-            <div className='about-person'>
-              <div className='about-circle'>
-                <img src={TJImage} />
-              </div>
-              <div className='about-role'>
-                <h4>Groomsman</h4>
-                <p>TJ Egan</p>
-              </div>
-            </div>
-            <div className='about-person'>
-              <div className='about-circle'>
-                <img src={BenImage} />
-              </div>
-              <div className='about-role'>
-                <h4>Groomsman</h4>
-                <p>Ben Woolsey</p>
-              </div>
-            </div>
-            <div className='about-person'>
-              <div className='about-circle'>
-                <img src={LewisImage} />
-              </div>
-              <div className='about-role'>
-                <h4>Groomsman</h4>
-                <p>Lewis Lines</p>
-              </div>
-            </div>
+            {
+              groomsmenList.map((groomsmen) => {
+                return <Person name={groomsmen.name} title={groomsmen.title} img={groomsmen.img} />
+              })
+            }
           </div>
-          <h3>The bridesmaids</h3>
+          <h3>{Data.bridesmaids}</h3>
           <div className='about-images-2'>
-            <div className='about-person'>
-              <div className='about-circle'>
-                <img src={ShannelleImage} />
-              </div>
-              <div className='about-role'>
-                <h4>Maid of Honor</h4>
-                <p>Shannelle Lopez</p>
-              </div>
-            </div>
-            <div className='about-person'>
-              <div className='about-circle'>
-                <img src={MaddieImage} />
-              </div>
-              <div className='about-role'>
-                <h4>Bridesmaid</h4>
-                <p>Maddie Hald</p>
-              </div>
-            </div>
-            <div className='about-person'>
-              <div className='about-circle'>
-                <img src={MariImage} />
-              </div>
-              <div className='about-role'>
-                <h4>Bridesmaid</h4>
-                <p>Mari Johannessen</p>
-              </div>
-            </div>
-            <div className='about-person'>
-              <div className='about-circle'>
-                <img src={JenImage} />
-              </div>
-              <div className='about-role'>
-                <h4>Bridesmaid</h4>
-                <p>Jennifer Veatch</p>
-              </div>
-            </div>
-            <div className='about-person'>
-              <div className='about-circle'>
-                <img src={EmilyImage} />
-              </div>
-              <div className='about-role'>
-                <h4>Bridesmaid</h4>
-                <p>Emily Dodson</p>
-              </div>
-            </div>
+            {
+              bridesmaidList.map((bridesmaid) => {
+                return <Person name={bridesmaid.name} title={bridesmaid.title} img={bridesmaid.img} />
+              })
+            }
           </div>
         </section>
       </div>
