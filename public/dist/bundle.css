@@ -83,27 +83,19 @@
     .about-break h1 {
       font-size: 48px;
       font-family: "Great Vibes", Helvetica, sans-serif; }
-  .about-story {
-    padding: 5rem;
-    background-color: #e3e4e6; }
   .about-party {
     background-color: #fff;
-    padding: 2rem; }
+    background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png");
+    padding: 2rem 2rem 2rem 2rem; }
     .about-party h3 {
       text-align: center;
       font-family: "Playfair Display", serif;
       text-transform: uppercase;
       font-weight: 400; }
-      .about-party h3:nth-child(1) {
-        border-top: 2px solid #f7d0cb;
-        padding-top: 1rem; }
   .about-images, .about-images-2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
-  .about-images-2 {
-    border-bottom: 2px solid #f7d0cb;
-    padding-bottom: 2rem; }
   .about-circle {
     overflow: hidden;
     max-height: 150px; }
@@ -126,17 +118,54 @@
     background-color: #d3d3d3;
     width: 250px;
     height: 300px; }
+  .about-story {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem 2rem 2rem;
+    background-color: #fff;
+    border-bottom: 2px solid #f7d0cb;
+    margin: 2rem; }
+  .about-svg {
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png"); }
+  .about-us {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center; }
+    .about-us h1, .about-us h4 {
+      font-family: "Playfair Display", serif;
+      margin: 0;
+      padding: 0;
+      font-weight: 400; }
+    .about-us h4 {
+      color: #f7d0cb; }
+    .about-us h1 {
+      font-size: 36px;
+      text-transform: uppercase; }
+    .about-us P {
+      font-family: "Playfair Display", serif;
+      border-bottom: 2px solid #f7d0cb;
+      padding-bottom: 2rem; }
 
 .wedding {
   text-align: center;
   color: #313131;
   padding-top: 1rem;
-  background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png"); }
+  background-color: #fff; }
+  .wedding h1 {
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+    font-size: 36px; }
   .wedding h3 {
     font-family: "Playfair Display", serif;
     text-transform: uppercase;
-    margin: 0; }
+    margin: 0;
+    font-weight: 400; }
   .wedding h4 {
     font-family: "Great Vibes", Helvetica, sans-serif;
     margin: 0; }
@@ -161,7 +190,8 @@
   flex-direction: column;
   width: 25%;
   padding: 4rem;
-  background-color: #fff; }
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png"); }
   .details-reception svg, .details-ceremony svg {
     display: block;
     margin: auto;
@@ -210,15 +240,6 @@
 .instagram, .rsvp {
   width: 50%;
   padding: 2rem; }
-  .instagram button, .rsvp button {
-    width: 150px;
-    height: 40px;
-    background-color: #f7d0cb;
-    border: 2px solid #fff;
-    color: #fff; }
-    .instagram button:hover, .rsvp button:hover {
-      background-color: #fff;
-      color: #f7d0cb; }
   .instagram h3, .rsvp h3 {
     text-transform: none;
     font-weight: 400; }

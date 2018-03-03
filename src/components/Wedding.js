@@ -10,7 +10,7 @@ class Wedding extends Component {
   render () {
     return (
       <div className='wedding'>
-        <h3>{Data.eventDetails}</h3>
+        <h1>{Data.eventDetails}</h1>
         <h4>{Data.whenWhere}</h4>
         <Details />
         <Timeline />

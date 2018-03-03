@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Data from '../data/data.json';
+import Mail from '../images/mail.svg';
 
 class RSVP extends Component {
   render () {
@@ -7,7 +8,7 @@ class RSVP extends Component {
       <div className='rsvp'>
         <h3>{Data.rsvpTitle}</h3>
         <p>{Data.rsvpSubtitle}</p>
-        <button className='rsvp-button'>{Data.rsvp}</button>
+        <img src={Mail} />
       </div>
     );
   }
