@@ -126,6 +126,10 @@
     background-color: $white;
     border-bottom: 2px solid $rose-gold;
     margin: 2rem;
+
+    img {
+      width: 100%;
+    }
   }
 
   &-svg {
@@ -152,7 +156,7 @@
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 28px;
       text-transform: uppercase;
     }
 

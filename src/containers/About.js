@@ -86,10 +86,10 @@ class About extends Component {
               <h1>{Data.proposed}</h1>
               <p>{Data.fake}}</p>
             </article>
-            <div className='placeholder' />
+            {/* <div className='placeholder' /> */}
           </section>
           <section className='about-bride'>
-            <div className='placeholder' />
+            {/* <div className='placeholder' /> */}
             <article className='about-details'>
               <h1>{Data.she}</h1>
               <h1>{Data.said} <span className='about-yes'>{Data.yes}
