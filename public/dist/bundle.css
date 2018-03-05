@@ -1,26 +1,41 @@
 .header {
   background-color: lightgrey;
-  height: 500px;
   width: 100%;
   text-align: center; }
   .header h1 {
     margin: 0;
-    color: #fff; }
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-weight: 400; }
+  .header img {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    opacity: 0.6; }
+  .header-details {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .countdown {
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
 
 .circle {
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   margin: 1rem;
   color: #fff;
   text-align: center;
   height: 175px;
-  width: 175px; }
+  width: 175px;
+  font-family: "Playfair Display", serif; }
   .circle p {
     padding: 15px 25px;
     font-size: 24px; }
@@ -28,19 +43,39 @@
     font-size: 42px;
     font-weight: 800; }
 
-.navigation ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  padding: 2rem 1rem 2rem 1rem;
-  border-bottom: 1px solid #e3e4e6; }
-  .navigation ul li {
-    padding: 0 1rem;
-    color: #e3e4e6; }
-    .navigation ul li:hover {
-      cursor: pointer; }
+.navigation {
+  background-color: #f7d0cb; }
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem 2rem 1rem; }
+    .navigation ul li {
+      padding: 0 1rem; }
+      .navigation ul li a {
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+        font-family: "Playfair Display", serif; }
+        .navigation ul li a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #fff;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s; }
+        .navigation ul li a:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
 
 .bio-svg {
   display: flex;
@@ -53,7 +88,7 @@
   font-family: "Playfair Display", serif;
   color: #313131; }
   .about-groom, .about-bride {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 1rem 1rem 0;
     display: flex;
     border-top: 2px solid #f7d0cb;
     border-bottom: 2px solid #f7d0cb; }
@@ -74,8 +109,9 @@
   .about-details {
     display: flex;
     flex-direction: column;
-    width: 50%;
     padding: 1rem; }
+    .about-details img {
+      width: 100%; }
   .about-start {
     background-color: #f7d0cb;
     padding: 2rem;
@@ -215,6 +251,7 @@
   width: 100%; }
   .registry-stores {
     display: flex;
+    flex-wrap: wrap;
     margin: 1rem;
     justify-content: center; }
   .registry-square {

@@ -10,6 +10,8 @@ import BenImage from '../images/ben.jpg';
 import TJImage from '../images/tj.jpg';
 import LewisImage from '../images/lewis.jpg';
 import JoeImage from '../images/joe.png';
+import RitzImage from '../images/ritz.jpg';
+import OliverImage from '../images/oliver.jpg';
 import AboutTimeline from '../images/timeline.svg';
 import Person from '../components/Person';
 
@@ -68,7 +70,7 @@ const bridesmaidList = [{
 class About extends Component {
   render () {
     return (
-      <div className='bio'>
+      <div className='bio' id='About'>
         <div className='bio-svg'>
           <svg width='177px' height='41px' viewBox='0 0 177 41' version='1.1'>
             <g id='Page-1' stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
@@ -86,10 +88,10 @@ class About extends Component {
               <h1>{Data.proposed}</h1>
               <p>{Data.fake}}</p>
             </article>
-            {/* <div className='placeholder' /> */}
+            <img src={OliverImage} />
           </section>
           <section className='about-bride'>
-            {/* <div className='placeholder' /> */}
+            <img src={RitzImage} />
             <article className='about-details'>
               <h1>{Data.she}</h1>
               <h1>{Data.said} <span className='about-yes'>{Data.yes}

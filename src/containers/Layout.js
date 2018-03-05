@@ -34,6 +34,7 @@ class Layout extends Component {
         {selectedNav === 'Wedding' && <Wedding />}
         {selectedNav === 'Gallery' && <Gallery />}
         {selectedNav === 'Travel &amp; Activities' && <Travel />}
+        {/* <Footer /> */}
       </div>
     );
   }

@@ -2,13 +2,30 @@
 
 .header {
   background-color: lightgrey;
-  height: 500px;
   width: 100%;
   text-align: center;
 
   h1 {
     margin: 0;
     color: $white;
+    font-family: $playfair-display;
+    font-weight: 400;
+  }
+
+  img {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: $white;
+    opacity: 0.6;
+  }
+
+  &-details {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -17,16 +34,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .circle {
   border-radius: 50%;
-  border: 1px solid $white;
+  border: 2px solid $white;
   margin: 1rem;
   color: $white;
   text-align: center;
   height: 175px;
   width: 175px;
+  font-family: $playfair-display;
 
   p {
     padding: 15px 25px;

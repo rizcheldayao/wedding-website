@@ -9,7 +9,7 @@ import Data from '../data/data.json';
 class Wedding extends Component {
   render () {
     return (
-      <div className='wedding'>
+      <div className='wedding' id='Wedding'>
         <h1>{Data.eventDetails}</h1>
         <h4>{Data.whenWhere}</h4>
         <Details />
