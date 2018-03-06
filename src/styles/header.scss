@@ -1,4 +1,4 @@
-@import './_variables';
+@import './variables';
 
 .header {
   background-color: lightgrey;
@@ -18,6 +18,8 @@
     text-align: center;
     color: $white;
     opacity: 0.6;
+    height: auto;
+    display: block;
   }
 
   &-details {

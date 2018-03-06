@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Data from '../data/data.json';
+import WalkingImage from '../images/wedding.jpg';
 
 class Details extends Component {
   render () {
@@ -21,7 +22,7 @@ class Details extends Component {
             <p>{Data.date}</p> <br />
             <p>{Data.address}</p>
           </section>
-          <section className='details-map' />
+          <img src={WalkingImage} />
           <section className='details-reception'>
             <div className='details-svg'>
               <svg width='50px' height='50px' viewBox='0 0 50 50' version='1.1'>

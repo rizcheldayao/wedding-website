@@ -15,11 +15,21 @@
   font-family: $playfair-display;
   color: $black;
 
+  @media (max-width:1281px)  {
+    flex-wrap: wrap;
+  }
+
   &-groom, &-bride {
     padding: 1rem 1rem 1rem 0;
     display: flex;
     border-top: 2px solid $rose-gold;
     border-bottom: 2px solid $rose-gold;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
     h1 {
       margin: 0;

@@ -10,8 +10,14 @@ class Layout extends Component {
   constructor (props) {
     super(props)
     const navOptions = ['About', 'Wedding', 'Gallery', 'Travel & Activities'];
+    const url = window.location.href;
+    let pathname = 'About';
+    if (url.indexOf('#') !== -1) {
+      const urlString = url.split('#');
+      pathname = urlString[urlString.length - 1];
+    }
     this.state = {
-      selectedNav: 'About',
+      selectedNav: pathname,
       navOptions: navOptions,
     }
     this.setNav = this.setNav.bind(this);
@@ -19,9 +25,12 @@ class Layout extends Component {
 
   setNav (e) {
     const selectedOption = e.target.innerHTML;
+    const firstWord = selectedOption.split(' ');
     this.setState({
-      selectedNav: selectedOption,
+      selectedNav: firstWord[0],
     });
+    const element = document.getElementById(firstWord);
+    if (element) element.scrollIntoView({behavior: 'smooth'});
   }
 
   render () {
@@ -33,7 +42,7 @@ class Layout extends Component {
         {selectedNav === 'About' && <About />}
         {selectedNav === 'Wedding' && <Wedding />}
         {selectedNav === 'Gallery' && <Gallery />}
-        {selectedNav === 'Travel &amp; Activities' && <Travel />}
+        {selectedNav === 'Travel' && <Travel />}
         {/* <Footer /> */}
       </div>
     );
