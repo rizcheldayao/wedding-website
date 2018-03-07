@@ -1,71 +1,10 @@
 import React, { Component } from 'react';
 import Data from '../data/data.json';
-import ShannelleImage from '../images/shannelle.jpg';
-import MaddieImage from '../images/maddie.jpg';
-import EmilyImage from '../images/emily.jpg';
-import JenImage from '../images/jen.jpg';
-import MariImage from '../images/mari.jpg';
-import JamesImage from '../images/james.jpg';
-import BenImage from '../images/ben.jpg';
-import TJImage from '../images/tj.jpg';
-import LewisImage from '../images/lewis.jpg';
-import JoeImage from '../images/joe.png';
+import { GROOMSMENLIST, BRIDESMAIDSLIST } from '../data/about';
 import RitzImage from '../images/ritz.jpg';
 import OliverImage from '../images/oliver.jpg';
 import AboutTimeline from '../images/timeline.svg';
 import Person from '../components/Person';
-
-const groomsmenList = [{
-  img: JamesImage,
-  title: 'Best Man',
-  name: 'James Townsend',
-},
-{
-  img: JoeImage,
-  title: 'Best Man',
-  name: 'Joe Nalson',
-},
-{
-  img: TJImage,
-  title: 'Groomsman',
-  name: 'TJ Egan',
-},
-{
-  img: BenImage,
-  title: 'Groomsman',
-  name: 'Ben Woolsey',
-},
-{
-  img: LewisImage,
-  title: 'Groomsman',
-  name: 'Lewis Lines',
-}];
-
-const bridesmaidList = [{
-  img: ShannelleImage,
-  title: 'Maid of Honor',
-  name: 'Shannelle Lopez',
-},
-{
-  img: MaddieImage,
-  title: 'Bridesmaid',
-  name: 'Maddie Hald',
-},
-{
-  img: MariImage,
-  title: 'Bridesmaid',
-  name: 'Mari Johannessen',
-},
-{
-  img: JenImage,
-  title: 'Bridesmaid',
-  name: 'Jennifer Veatch',
-},
-{
-  img: EmilyImage,
-  title: 'Bridesmaid',
-  name: 'Emily Dodson',
-}];
 
 class About extends Component {
   render () {
@@ -86,7 +25,7 @@ class About extends Component {
             <article className='about-details'>
               <h1>{Data.he}</h1>
               <h1>{Data.proposed}</h1>
-              <p>{Data.fake}}</p>
+              <p>{Data.fake}</p>
             </article>
             <img src={OliverImage} />
           </section>
@@ -110,7 +49,7 @@ class About extends Component {
                     </g>
                   </g>
                 </svg></span></h1>
-              <p>{Data.fake}}</p>
+              <p>{Data.fake}</p>
             </article>
           </section>
         </div>
@@ -129,7 +68,7 @@ class About extends Component {
           <h3>{Data.groomsmen}</h3>
           <div className='about-images'>
             {
-              groomsmenList.map((groomsmen) => {
+              GROOMSMENLIST.map((groomsmen) => {
                 return <Person name={groomsmen.name} title={groomsmen.title} img={groomsmen.img} />
               })
             }
@@ -137,7 +76,7 @@ class About extends Component {
           <h3>{Data.bridesmaids}</h3>
           <div className='about-images-2'>
             {
-              bridesmaidList.map((bridesmaid) => {
+              BRIDESMAIDSLIST.map((bridesmaid) => {
                 return <Person name={bridesmaid.name} title={bridesmaid.title} img={bridesmaid.img} />
               })
             }

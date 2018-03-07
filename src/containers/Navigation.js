@@ -7,8 +7,7 @@ class Navigation extends Component {
     this.setNav = this.setNav.bind(this);
     const { navOptions } = this.props;
     const list = navOptions.map((option) => {
-      const anchor = option.split(' ');
-      return <li key={option} onClick={this.setNav}><a href={`#${anchor[0]}`}>{option}</a></li>
+      return <li key={option} onClick={this.setNav}><a href={`#${option}`}>{option}</a></li>
     });
     this.state = {
       list: list,

@@ -18,7 +18,7 @@
   .header-details {
     width: 100%;
     position: absolute;
-    top: 45%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
@@ -44,6 +44,24 @@
   .circle span {
     font-size: 42px;
     font-weight: 800; }
+
+@media (min-width: 882px) and (max-width: 1121px) {
+  .header-details {
+    top: 30%; } }
+
+@media (max-width: 1180px) {
+  .countdown {
+    display: none; } }
+
+@media (min-width: 515px) and (max-width: 1180px) {
+  .header-details {
+    top: 20%; } }
+
+@media (max-width: 600px) {
+  .header-details {
+    top: 10%; }
+  .header h1 {
+    font-size: 18px; } }
 
 .navigation {
   background-color: #f7d0cb; }
@@ -78,6 +96,14 @@
           visibility: visible;
           -webkit-transform: scaleX(1);
           transform: scaleX(1); }
+
+@media (min-width: 812px) and (max-width: 1120px) {
+  .navigation ul {
+    padding: 1rem 1rem 1rem 1rem; } }
+
+@media (max-width: 812px) {
+  .navigation ul {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem; } }
 
 .bio-svg {
   display: flex;
@@ -196,6 +222,14 @@
       border-bottom: 2px solid #f7d0cb;
       padding-bottom: 2rem; }
 
+@media (max-width: 630px) {
+  .about-groom img, .about-bride img {
+    display: none; } }
+
+@media (max-width: 1024px) {
+  .about-story {
+    padding: 0 0 2rem 0; } }
+
 .wedding {
   text-align: center;
   color: #313131;
@@ -255,7 +289,7 @@
 .registry {
   background-color: #fff;
   background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png");
-  padding: 1rem;
+  padding: 1rem 0;
   width: 100%; }
   .registry-stores {
     display: flex;
@@ -283,6 +317,13 @@
   .instagram h3, .rsvp h3 {
     text-transform: none;
     font-weight: 400; }
+
+@media (max-width: 1250px) {
+  .details-section {
+    flex-direction: column; }
+  .details-reception, .details-ceremony {
+    width: 100%;
+    padding: 2rem 0; } }
 
 .gallery {
   padding: 1rem 5rem 1rem 5rem;

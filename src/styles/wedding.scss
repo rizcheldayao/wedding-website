@@ -79,7 +79,7 @@
 
 .registry {
   @include background;
-  padding: 1rem;
+  padding: 1rem 0;
   width: 100%;
 
   &-stores {
@@ -120,5 +120,17 @@
   h3 {
     text-transform: none;
     font-weight: 400;
+  }
+}
+
+@media (max-width: 1250px) {
+  .details {
+    &-section {
+      flex-direction: column;
+    }
+    &-reception, &-ceremony {
+      width: 100%;
+      padding: 2rem 0;
+    }
   }
 }

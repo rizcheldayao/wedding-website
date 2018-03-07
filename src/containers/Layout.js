@@ -9,7 +9,7 @@ import Travel from '../components/Travel';
 class Layout extends Component {
   constructor (props) {
     super(props)
-    const navOptions = ['About', 'Wedding', 'Gallery', 'Travel & Activities'];
+    const navOptions = ['About', 'Wedding', 'Gallery', 'Travel'];
     const url = window.location.href;
     let pathname = 'About';
     if (url.indexOf('#') !== -1) {
@@ -25,12 +25,9 @@ class Layout extends Component {
 
   setNav (e) {
     const selectedOption = e.target.innerHTML;
-    const firstWord = selectedOption.split(' ');
     this.setState({
-      selectedNav: firstWord[0],
+      selectedNav: selectedOption,
     });
-    const element = document.getElementById(firstWord);
-    if (element) element.scrollIntoView({behavior: 'smooth'});
   }
 
   render () {
