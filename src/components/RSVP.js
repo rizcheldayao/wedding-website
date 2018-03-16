@@ -8,7 +8,7 @@ class RSVP extends Component {
       <div className='rsvp'>
         <h3>{Data.rsvpTitle}</h3>
         <p>{Data.rsvpSubtitle}</p>
-        <img src={Mail} />
+        <img src={Mail} alt='Mail Image' />
       </div>
     );
   }

@@ -12,13 +12,13 @@ class Registry extends Component {
         <p>{Data.thankYou}</p>
         <div className='registry-stores'>
           <div className='registry-square'>
-            <img className='registry-amazon' src={Amazon} />
+            <img className='registry-amazon' src={Amazon} alt='Amazon logo' />
           </div>
           <div className='registry-square'>
-            <img className='registry-target' src={Target} />
+            <img className='registry-target' src={Target} alt='Target logo' />
           </div>
           <div className='registry-square'>
-            <img className='registry-amazon' src={Amazon} />
+            <img className='registry-amazon' src={Amazon} alt='Amazon logo' />
           </div>
         </div>
       </div>

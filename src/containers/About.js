@@ -22,16 +22,16 @@ class About extends Component {
         </div>
         <div className='about'>
           <section className='about-groom'>
-            <article className='about-details'>
+            <article className='about-details' role='article'>
               <h1>{Data.he}</h1>
               <h1>{Data.proposed}</h1>
               <p>{Data.fake}</p>
             </article>
-            <img src={OliverImage} />
+            <img src={OliverImage} alt='Oliver Image' />
           </section>
           <section className='about-bride'>
-            <img src={RitzImage} />
-            <article className='about-details'>
+            <img src={RitzImage} alt='RitzImage' />
+            <article className='about-details' role='article'>
               <h1>{Data.she}</h1>
               <h1>{Data.said} <span className='about-yes'>{Data.yes}
                 <svg width='40px' height='45px' viewBox='0 0 40 45' version='1.1'>
@@ -62,7 +62,7 @@ class About extends Component {
           <p>{Data.fake}</p>
         </section>
         <section className='about-story'>
-          <img src={AboutTimeline} />
+          <img src={AboutTimeline} alt='Timeline Image' />
         </section>
         <section className='about-party'>
           <h3>{Data.groomsmen}</h3>

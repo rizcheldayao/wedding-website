@@ -19,6 +19,40 @@ import Pic18 from '../images/dating/pics18.jpg';
 import Pic19 from '../images/dating/pics19.jpg';
 import Pic20 from '../images/dating/pics20.jpg';
 
+import Engagement1 from '../images/engagement/Engagement-0001.jpg';
+import Engagement2 from '../images/engagement/Engagement-0002.jpg';
+import Engagement3 from '../images/engagement/Engagement-0003.jpg';
+import Engagement4 from '../images/engagement/Engagement-0004.jpg';
+import Engagement5 from '../images/engagement/Engagement-0005.jpg';
+import Engagement6 from '../images/engagement/Engagement-0006.jpg';
+import Engagement7 from '../images/engagement/Engagement-0007.jpg';
+import Engagement8 from '../images/engagement/Engagement-0008.jpg';
+import Engagement9 from '../images/engagement/Engagement-0009.jpg';
+import Engagement10 from '../images/engagement/Engagement-0010.jpg';
+import Engagement11 from '../images/engagement/Engagement-0011.jpg';
+import Engagement12 from '../images/engagement/Engagement-0012.jpg';
+import Engagement13 from '../images/engagement/Engagement-0013.jpg';
+import Engagement14 from '../images/engagement/Engagement-0014.jpg';
+import Engagement15 from '../images/engagement/Engagement-0015.jpg';
+import Engagement16 from '../images/engagement/Engagement-0016.jpg';
+import Engagement17 from '../images/engagement/Engagement-0017.jpg';
+import Engagement18 from '../images/engagement/Engagement-0018.jpg';
+import Engagement19 from '../images/engagement/Engagement-0019.jpg';
+import Engagement20 from '../images/engagement/Engagement-0020.jpg';
+import Engagement21 from '../images/engagement/Engagement-0021.jpg';
+import Engagement22 from '../images/engagement/Engagement-0022.jpg';
+import Engagement23 from '../images/engagement/Engagement-0023.jpg';
+import Engagement24 from '../images/engagement/Engagement-0024.jpg';
+import Engagement25 from '../images/engagement/Engagement-0025.jpg';
+import Engagement26 from '../images/engagement/Engagement-0026.jpg';
+import Engagement27 from '../images/engagement/Engagement-0027.jpg';
+import Engagement28 from '../images/engagement/Engagement-0028.jpg';
+import Engagement29 from '../images/engagement/Engagement-0029.jpg';
+import Engagement30 from '../images/engagement/Engagement-0030.jpg';
+import Engagement31 from '../images/engagement/Engagement-0031.jpg';
+import Engagement32 from '../images/engagement/Engagement-0032.jpg';
+import Engagement33 from '../images/engagement/Engagement-0033.jpg';
+
 export const IMAGES =
 [{
   src: Pic1,
@@ -161,3 +195,235 @@ export const IMAGES =
   isSelected: false
 }
 ]
+
+export const ENGAGEMENT_PHOTOS = [{
+  src: Engagement1,
+  thumbnail: Engagement1,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement2,
+  thumbnail: Engagement2,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement3,
+  thumbnail: Engagement3,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement4,
+  thumbnail: Engagement4,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement5,
+  thumbnail: Engagement5,
+  thumbnailWidth: 2769,
+  thumbnailHeight: 4000,
+  isSelected: false
+},
+{
+  src: Engagement6,
+  thumbnail: Engagement6,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement7,
+  thumbnail: Engagement7,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2557,
+  isSelected: false
+},
+{
+  src: Engagement8,
+  thumbnail: Engagement8,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement9,
+  thumbnail: Engagement9,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement10,
+  thumbnail: Engagement10,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement11,
+  thumbnail: Engagement11,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement12,
+  thumbnail: Engagement12,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement13,
+  thumbnail: Engagement13,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement14,
+  thumbnail: Engagement14,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement15,
+  thumbnail: Engagement15,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement16,
+  thumbnail: Engagement16,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement17,
+  thumbnail: Engagement17,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement18,
+  thumbnail: Engagement18,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2686,
+  isSelected: false
+},
+{
+  src: Engagement19,
+  thumbnail: Engagement19,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement20,
+  thumbnail: Engagement20,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement21,
+  thumbnail: Engagement21,
+  thumbnailWidth: 2775,
+  thumbnailHeight: 3770,
+  isSelected: false
+},
+{
+  src: Engagement22,
+  thumbnail: Engagement22,
+  thumbnailWidth: 2916,
+  thumbnailHeight: 3839,
+  isSelected: false
+},
+{
+  src: Engagement24,
+  thumbnail: Engagement24,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement25,
+  thumbnail: Engagement25,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement26,
+  thumbnail: Engagement26,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement27,
+  thumbnail: Engagement27,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement28,
+  thumbnail: Engagement28,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement29,
+  thumbnail: Engagement29,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement30,
+  thumbnail: Engagement30,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement31,
+  thumbnail: Engagement31,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement32,
+  thumbnail: Engagement32,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2686,
+  isSelected: false
+},
+{
+  src: Engagement33,
+  thumbnail: Engagement33,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+},
+{
+  src: Engagement23,
+  thumbnail: Engagement23,
+  thumbnailWidth: 4000,
+  thumbnailHeight: 2667,
+  isSelected: false
+}]

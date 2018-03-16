@@ -348,6 +348,9 @@
   font-family: "Great Vibes", Helvetica, sans-serif;
   text-align: center; }
 
+.footer img {
+  width: 100%; }
+
 *::after, *::before {
   box-sizing: border-box; }
 

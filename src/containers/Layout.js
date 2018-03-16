@@ -5,6 +5,7 @@ import About from './About';
 import Wedding from '../components/Wedding';
 import Gallery from '../components/Gallery';
 import Travel from '../components/Travel';
+import Footer from '../components/Footer';
 
 class Layout extends Component {
   constructor (props) {
@@ -40,7 +41,7 @@ class Layout extends Component {
         {selectedNav === 'Wedding' && <Wedding />}
         {selectedNav === 'Gallery' && <Gallery />}
         {selectedNav === 'Travel' && <Travel />}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }
