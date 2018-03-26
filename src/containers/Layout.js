@@ -41,7 +41,7 @@ class Layout extends Component {
         {selectedNav === 'Wedding' && <Wedding />}
         {selectedNav === 'Gallery' && <Gallery />}
         {selectedNav === 'Travel' && <Travel />}
-        <Footer />
+        {selectedNav !== 'Gallery' && <Footer />}
       </div>
     );
   }
