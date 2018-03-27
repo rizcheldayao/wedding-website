@@ -198,3 +198,21 @@
     }
   }
 }
+
+@media (max-width: 823px) {
+  .about {
+    &-us {
+      padding-bottom: 0;
+    }
+    &-story {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &-party {
+      margin-top: 2rem;
+    }
+    &-person {
+      padding-top: 1rem;
+    }
+  }
+}

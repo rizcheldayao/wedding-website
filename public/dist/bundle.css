@@ -26,8 +26,7 @@
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 100%; }
+  justify-content: center; }
 
 .circle {
   border-radius: 50%;
@@ -230,6 +229,17 @@
   .about-story {
     padding: 0 0 2rem 0; } }
 
+@media (max-width: 823px) {
+  .about-us {
+    padding-bottom: 0; }
+  .about-story {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .about-party {
+    margin-top: 2rem; }
+  .about-person {
+    padding-top: 1rem; } }
+
 .wedding {
   text-align: center;
   color: #313131;
@@ -318,12 +328,16 @@
     text-transform: none;
     font-weight: 400; }
 
-@media (max-width: 1250px) {
+@media (max-width: 1280px) {
   .details-section {
     flex-direction: column; }
   .details-reception, .details-ceremony {
     width: 100%;
     padding: 2rem 0; } }
+
+@media (max-width: 823px) {
+  .timeline {
+    padding: 0; } }
 
 .gallery {
   padding: 1rem 5rem 1rem 5rem;
@@ -348,8 +362,27 @@
   font-family: "Great Vibes", Helvetica, sans-serif;
   text-align: center; }
 
-.footer img {
-  width: 100%; }
+.footer {
+  position: relative; }
+  .footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.8; }
+  .footer h1 {
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #313131;
+    font-family: "Great Vibes", Helvetica, sans-serif; }
+
+@media (max-width: 823px) {
+  .footer h1 {
+    font-size: 18px;
+    bottom: 2px; } }
 
 *::after, *::before {
   box-sizing: border-box; }

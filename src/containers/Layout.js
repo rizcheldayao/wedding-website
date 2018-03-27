@@ -22,6 +22,24 @@ class Layout extends Component {
       navOptions: navOptions,
     }
     this.setNav = this.setNav.bind(this);
+    this.onHashChange = this.onHashChange.bind(this);
+  }
+
+  componentDidMount () {
+    window.addEventListener('hashchange', this.onHashChange)
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('hashchange', this.onHashChange)
+  }
+
+  onHashChange () {
+    const hash = window.location.hash;
+    const hashString = hash.split('#');
+    const pathname = hashString[hashString.length - 1];
+    this.setState({
+      selectedNav: pathname
+    });
   }
 
   setNav (e) {
@@ -41,7 +59,7 @@ class Layout extends Component {
         {selectedNav === 'Wedding' && <Wedding />}
         {selectedNav === 'Gallery' && <Gallery />}
         {selectedNav === 'Travel' && <Travel />}
-        {selectedNav !== 'Gallery' && <Footer />}
+        {(selectedNav !== 'Gallery' && selectedNav !== 'Travel') && <Footer />}
       </div>
     );
   }
