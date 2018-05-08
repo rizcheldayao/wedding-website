@@ -7,7 +7,7 @@ module.exports = {
   entry: ['./src/index.js', './src/styles/main.scss'],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './public/dist')
+    path: path.resolve(__dirname, './public')
   },
   module: {
     rules: [
@@ -30,7 +30,7 @@ module.exports = {
           loader: 'url-loader',
           options: {
             limit: 8000,
-            name: '[path]/images/[hash]-[name].[ext]'
+            name: 'images/[hash]-[name].[ext]'
           }
         }]
       }
