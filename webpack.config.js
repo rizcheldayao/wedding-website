@@ -30,10 +30,7 @@ module.exports = {
           loader: 'url-loader',
           options: {
             limit: 8000,
-            name: 'images/[hash]-[name].[ext]',
-            publicPath: function (url) {
-              return url.replace(/images/, '../images/');
-            }
+            name: 'images/[hash]-[name].[ext]'
           }
         }]
       }
