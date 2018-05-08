@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Data from '../data/data.json';
-import WalkingImage from '../images/wedding.jpg';
+// import WalkingImage from '../images/wedding.jpg';
 
 class Details extends Component {
   render () {
@@ -22,7 +22,7 @@ class Details extends Component {
             <p>{Data.date}</p> <br />
             <p>{Data.address}</p>
           </section>
-          <img src={WalkingImage} />
+          <img alt='Details image' src={'https://lh3.googleusercontent.com/bhiawYatkFOt6UOkI4adUVlpueJ-rwS2Oerz0byi2POZBc_1olJ9SPQd4AxsgtSx8ocjBXIIoeaeNILG5hld4YPrWdv8OhG-vd4B6g9-sUcm_GH9l7w-DvFOsTuZ3ynB3np5SNrx7RUWKfCRtzQNXop1Nft5Lju3WKI0jPsj21d1gtbL_4H2g4eDXplBln6fMUdtLkQ3h3eKe5Ow1GRjriyKxHpbuslBbPi7dwOGLTgTOdJKbE2HoGQ_2MY2P3AIBU-iTifOPHEWbebBFJSx5OPFR9wqpA0aSaJaTyFdfvdGVXGwIXuW5vBMbxrYi4NESg1YDraM2D7l1ZIzflG1PkI61hpxCEZuLtorSTnTjhCPSzCN1YVAHMIvuqbq7NiUneSX7cbyHwfAHlpvIn5vN9bv6Rtt1wj8rmBc0rRkChY-1QIQ-1ljOrJsilfaAJMFS7DWtJ7DniDHj1ERK_SNeeswobSHMvtW61dSBa25lHgxp1beFuF5U998PzDwfhyzwnnHEf4qek-sF5F7PmThOxhgxjL4vVWPr7_tUmbmvtKYXUEMybG4K2TlhYHIFlL2Hli_FvOVDD7eSXkciBH6SWdJAjx2aJIYfWnt1zo=w802-h328-no'} />
           <section className='details-reception'>
             <div className='details-svg'>
               <svg width='50px' height='50px' viewBox='0 0 50 50' version='1.1'>

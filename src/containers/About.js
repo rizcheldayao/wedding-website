@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Data from '../data/data.json';
 import { GROOMSMENLIST, BRIDESMAIDSLIST } from '../data/about';
-import RitzImage from '../images/ritz.jpg';
-import OliverImage from '../images/oliver.jpg';
 import AboutTimeline from '../images/timeline.svg';
 import Person from '../components/Person';
 
@@ -27,10 +25,10 @@ class About extends Component {
               <h1>{Data.proposed}</h1>
               <p>{Data.fake}</p>
             </article>
-            <img src={OliverImage} alt='Oliver Image' />
+            <img src={'https://lh3.googleusercontent.com/hz5-8kuxT39LA8vMdrjMNgV70IilIB5K6GfdeZRckJ3IwbtBZMuv7qYtaUxJE2OGNeX7C82WPiGd9iAFDNQR7hOidoM1VhjLVTd_mm9miKkIOjfzP2xb743keInxhRWVe29RIi1Wpu-i-dfCj9XqRAYU-76_CZMsOiWnrdHreOukMR_OIK6fN8I8FFZZOj9b4QIwgmWtLEkQVPYn89kGFEFyyS4stqUSTUP3GZGTFci9xa-3Cs2InviDysshivVpbOTVX1P1IKqhOAnkxjPF3K5Xqc4MlmcqfEDaGCVfuiF7aoMjN0fXztT9ey1GqrjMJUSGLSHCpa3SCT_G7jSC3Rgstdw9IjiCQ1Aw1D_efILkP1r8TXQiLGt9NWwEe-VUtWOcmmuR4aErlxubeBPzcJWBXJEj1isngT57dVMXaL1c3Y-ygXUpBw_vWipirrTR1wuAJDnjwEgmHz6OfNjxNW8rVVBXMlsvye4OL7STfZpYtKFp4xFMX7sT1uN8oyv5-FGlK6oj29-hw55t-OyOv1z0fCNnXvaIt-V8FhiC8-oM36OH4hSzu4nPFtcPS4_Njo0SPaz6i5-vrD8sLYbOm8KCny04AFmmYoqO4bU=w244-h362-no'} alt='Oliver Image' />
           </section>
           <section className='about-bride'>
-            <img src={RitzImage} alt='RitzImage' />
+            <img src={'https://lh3.googleusercontent.com/6e77B0_L-QUJH_nmhV1mjUZAbzXmWy_103lmZoR0ga749ZymAEvqnRMKBG8KK3uuR8Y4bYtdteaRgLU7QZlJn79Vh2t0AQtioTurU3ZMPJKwmzW6f4h5yvylWhxekyzJzJp_dRAyvGmhqvUrakKXn4rXcxjYLoucVL6EWyiMqzyHVFJdSPbysWlCaWKn7H61xMtd4AYXYX48juA4yInfJeIVvOz3h95Zwq3bmUGfbCSH6lOQGsPH8P2Mq3O2gMv2ddMoAvFrHEnGXMmzXYN-0P1zs8djI4sqNT8ztkoksru7ivbvvcgAGPd_w5Nysz69qN4ElKKF0KHg7R7QABbIn4m0DzZxoKJuNigdLn-nNosTZ71uijxKh9JgiPAEOp_tdTFnF8fY1xtcKnUoJD9c_JctbvgtKHSPa6M84x9y0EtNtHIsYXkCGM3MfNoUjNM-pUJdfiq8lQv1yo3QhhPge7Oeb51nPFEeg2lheEQMQQFyPNT7nm5ttrEo6G12XtIn-TJ2Ue1ZJ6BKSf2sfSLTg9UQ7cnM7UMNjeosVd1rd-Z655c-tEmiKVq17dYShHxhvHQnRVUdmxQnReEQBrVlEy18s0kV0ZrgV8RrbsE=w250-h337-no'} alt='RitzImage' />
             <article className='about-details' role='article'>
               <h1>{Data.she}</h1>
               <h1>{Data.said} <span className='about-yes'>{Data.yes}
