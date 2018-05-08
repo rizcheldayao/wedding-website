@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --port 3000",
     "lint": "./node_modules/.bin/eslint ./src",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "build": "webpack -p"
   },
   "author": "Rizchel Dayao",
   "license": "ISC",
