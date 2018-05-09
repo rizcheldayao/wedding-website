@@ -199,211 +199,211 @@ export const IMAGES =
 export const ENGAGEMENT_PHOTOS = [{
   src: Engagement1,
   thumbnail: Engagement1,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement2,
   thumbnail: Engagement2,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement3,
   thumbnail: Engagement3,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement4,
   thumbnail: Engagement4,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement5,
   thumbnail: Engagement5,
-  thumbnailWidth: 2769,
-  thumbnailHeight: 4000,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 2774,
   isSelected: false
 },
 {
   src: Engagement6,
   thumbnail: Engagement6,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement7,
   thumbnail: Engagement7,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2557,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1227,
   isSelected: false
 },
 {
   src: Engagement8,
   thumbnail: Engagement8,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement9,
   thumbnail: Engagement9,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement10,
   thumbnail: Engagement10,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement11,
   thumbnail: Engagement11,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement12,
   thumbnail: Engagement12,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement13,
   thumbnail: Engagement13,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement14,
   thumbnail: Engagement14,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement15,
   thumbnail: Engagement15,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement16,
   thumbnail: Engagement16,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement17,
   thumbnail: Engagement17,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement18,
   thumbnail: Engagement18,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2686,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1289,
   isSelected: false
 },
 {
   src: Engagement19,
   thumbnail: Engagement19,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement20,
   thumbnail: Engagement20,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement21,
   thumbnail: Engagement21,
-  thumbnailWidth: 2775,
-  thumbnailHeight: 3770,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 2608,
   isSelected: false
 },
 {
   src: Engagement22,
   thumbnail: Engagement22,
-  thumbnailWidth: 2916,
-  thumbnailHeight: 3839,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 2528,
   isSelected: false
 },
 {
   src: Engagement24,
   thumbnail: Engagement24,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement25,
   thumbnail: Engagement25,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement26,
   thumbnail: Engagement26,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1355,
   isSelected: false
 },
 {
   src: Engagement27,
   thumbnail: Engagement27,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement28,
   thumbnail: Engagement28,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement29,
   thumbnail: Engagement29,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement30,
   thumbnail: Engagement30,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement31,
   thumbnail: Engagement31,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1277,
   isSelected: false
 },
 {
@@ -416,14 +416,14 @@ export const ENGAGEMENT_PHOTOS = [{
 {
   src: Engagement33,
   thumbnail: Engagement33,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 },
 {
   src: Engagement23,
   thumbnail: Engagement23,
-  thumbnailWidth: 4000,
-  thumbnailHeight: 2667,
+  thumbnailWidth: 1920,
+  thumbnailHeight: 1280,
   isSelected: false
 }]

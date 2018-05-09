@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Data from '../data/data.json';
-import WalkingImage from '../images/wedding.jpg';
+import WalkingImage from '../images/details.jpg';
 
 class Details extends Component {
   render () {

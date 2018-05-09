@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Countdown from '../containers/Countdown';
 import Data from '../data/data.json';
-import EngagementPic from '../images/engagement.jpg';
+import EngagementPic from '../images/header.jpg';
 
 class Header extends Component {
   render () {
