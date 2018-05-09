@@ -98,6 +98,11 @@
     &:hover {
       box-shadow: 10px 5px 5px $grey;
     }
+
+    svg {
+      position: relative;
+      padding-top: 75px;
+    }
   }
 
   &-amazon {
