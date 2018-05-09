@@ -7,7 +7,7 @@ class Person extends Component {
     return (
       <div className='about-person'>
         <div className='about-circle'>
-          <img src={img} />
+          <img src={img} alt='Wedding party image' />
         </div>
         <div className='about-role'>
           <h4>{title}</h4>

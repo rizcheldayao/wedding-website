@@ -22,7 +22,7 @@ class Details extends Component {
             <p>{Data.date}</p> <br />
             <p>{Data.address}</p>
           </section>
-          <img src={WalkingImage} />
+          <img src={WalkingImage} alt='Details image'/>
           <section className='details-reception'>
             <div className='details-svg'>
               <svg width='50px' height='50px' viewBox='0 0 50 50' version='1.1'>
