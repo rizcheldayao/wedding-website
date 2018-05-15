@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import registerServiceWorker from './registerServiceWorker';
+import * as OfflinePluginRuntime from 'offline-plugin/runtime';
+// import registerServiceWorker from './registerServiceWorker';
 // import { Provider } from 'react-redux';
 
 import App from './App';
@@ -13,4 +14,5 @@ render(
   document.getElementById('root')
 );
 
-registerServiceWorker(); // Runs register() as default function
+OfflinePluginRuntime.install();
+// registerServiceWorker(); // Runs register() as default function
