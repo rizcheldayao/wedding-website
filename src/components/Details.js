@@ -3,6 +3,19 @@ import Data from '../data/data.json';
 import WalkingImage from '../images/details.jpg';
 
 class Details extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      image: null,
+    }
+  }
+
+  componentWillMount () {
+    const img = document.createElement('img');
+    img.src = WalkingImage;
+    this.setState({ image: img });
+  }
+
   render () {
     return (
       <div className='details'>
@@ -22,7 +35,7 @@ class Details extends Component {
             <p>{Data.date}</p> <br />
             <p>{Data.address}</p>
           </section>
-          <img src={WalkingImage} alt='Details image' />
+          <img src={this.state.image.src} alt='Details image' />
           <section className='details-reception'>
             <div className='details-svg'>
               <svg width='50px' height='50px' viewBox='0 0 50 50' version='1.1'>

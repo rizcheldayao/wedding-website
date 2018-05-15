@@ -7,6 +7,25 @@ import AboutTimeline from '../images/timeline.svg';
 import Person from '../components/Person';
 
 class About extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      ritzImage: null,
+      oliverImage: null,
+    }
+  }
+
+  componentWillMount () {
+    const ritzImage = document.createElement('img');
+    ritzImage.src = RitzImage;
+    const oliverImage = document.createElement('img');
+    oliverImage.src = OliverImage;
+    this.setState({
+      ritzImage: ritzImage,
+      oliverImage: oliverImage,
+    });
+  }
+
   render () {
     return (
       <div className='bio' id='About'>
@@ -27,10 +46,10 @@ class About extends Component {
               <h1>{Data.proposed}</h1>
               <p>{Data.fake}</p>
             </article>
-            <img src={OliverImage} alt='Oliver Image' />
+            <img src={this.state.oliverImage.src} alt='Oliver Image' />
           </section>
           <section className='about-bride'>
-            <img src={RitzImage} alt='RitzImage' />
+            <img src={this.state.ritzImage.src} alt='RitzImage' />
             <article className='about-details' role='article'>
               <h1>{Data.she}</h1>
               <h1>{Data.said} <span className='about-yes'>{Data.yes}
