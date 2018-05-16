@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Amazon from '../images/amazon-logo.svg';
-import Target from '../images/target.svg';
+// import Amazon from '../images/amazon-logo.svg';
+// import Target from '../images/target.svg';
 import Data from '../data/data.json';
 
 class Registry extends Component {
@@ -8,9 +8,10 @@ class Registry extends Component {
     return (
       <div className='registry'>
         <h3>{Data.registryTitle}</h3>
-        <p>{Data.registrySubtitle}</p>
-        <p>{Data.thankYou}</p>
-        <div className='registry-stores'>
+        <p>Gift registry details coming soon!</p>
+        {/* <p>{Data.registrySubtitle}</p>
+        <p>{Data.thankYou}</p> */}
+        {/* <div className='registry-stores'>
           <div className='registry-square'>
             <img className='registry-amazon' src={Amazon} alt='Amazon logo' />
           </div>
@@ -20,7 +21,7 @@ class Registry extends Component {
           <div className='registry-square'>
             <img className='registry-amazon' src={Amazon} alt='Amazon logo' />
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

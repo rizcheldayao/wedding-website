@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Data from '../data/data.json';
 import { GROOMSMENLIST, BRIDESMAIDSLIST } from '../data/about';
 import RitzImage from '../images/ritz.jpg';
@@ -9,6 +10,7 @@ import Person from '../components/Person';
 class About extends Component {
   constructor (props) {
     super(props);
+    this.addImages = this.addImages.bind(this);
     this.state = {
       ritzImage: null,
       oliverImage: null,
@@ -24,6 +26,10 @@ class About extends Component {
       ritzImage: ritzImage,
       oliverImage: oliverImage,
     });
+  }
+
+  addImages () {
+    this.props.addImages();
   }
 
   render () {
@@ -44,12 +50,12 @@ class About extends Component {
             <article className='about-details' role='article'>
               <h1>{Data.he}</h1>
               <h1>{Data.proposed}</h1>
-              <p>{Data.fake}</p>
+              <p>{Data.oliverBio}</p>
             </article>
-            <img src={this.state.oliverImage.src} alt='Oliver Image' />
+            <img src={this.state.oliverImage.src} alt='Oliver Image' onLoad={this.addImages} />
           </section>
           <section className='about-bride'>
-            <img src={this.state.ritzImage.src} alt='RitzImage' />
+            <img src={this.state.ritzImage.src} alt='RitzImage' onLoad={this.addImages} />
             <article className='about-details' role='article'>
               <h1>{Data.she}</h1>
               <h1>{Data.said} <span className='about-yes'>{Data.yes}
@@ -68,7 +74,7 @@ class About extends Component {
                     </g>
                   </g>
                 </svg></span></h1>
-              <p>{Data.fake}</p>
+              <p>{Data.rizchelBio}</p>
             </article>
           </section>
         </div>
@@ -78,17 +84,17 @@ class About extends Component {
         <section className='about-us'>
           <h1>{Data.ourStory}</h1>
           <h4>{Data.futureWood}</h4>
-          <p>{Data.fake}</p>
+          <p>{Data.storyDetails}</p>
         </section>
         <section className='about-story'>
-          <img src={AboutTimeline} alt='Timeline Image' />
+          <img src={AboutTimeline} alt='Timeline Image' onLoad={this.addImages} />
         </section>
         <section className='about-party'>
           <h3>{Data.groomsmen}</h3>
           <div className='about-images'>
             {
               GROOMSMENLIST.map((groomsmen) => {
-                return <Person name={groomsmen.name} title={groomsmen.title} img={groomsmen.img} />
+                return <Person name={groomsmen.name} title={groomsmen.title} img={groomsmen.img} addImages={this.addImages} />
               })
             }
           </div>
@@ -96,7 +102,7 @@ class About extends Component {
           <div className='about-images-2'>
             {
               BRIDESMAIDSLIST.map((bridesmaid) => {
-                return <Person name={bridesmaid.name} title={bridesmaid.title} img={bridesmaid.img} />
+                return <Person name={bridesmaid.name} title={bridesmaid.title} img={bridesmaid.img} addImages={this.addImages} />
               })
             }
           </div>
@@ -105,4 +111,9 @@ class About extends Component {
     );
   }
 }
+
+About.propTypes = {
+  addImages: PropTypes.func,
+};
+
 export default About;
