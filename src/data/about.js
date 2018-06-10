@@ -1,7 +1,7 @@
 import ShannelleImage from '../images/shannelle.jpg';
 import MaddieImage from '../images/maddie.jpg';
 import EmilyImage from '../images/emily.jpg';
-import JenImage from '../images/jen.jpg';
+import EilishImage from '../images/eilish.jpg';
 import MariImage from '../images/mari.jpg';
 import JamesImage from '../images/james.jpg';
 import BenImage from '../images/ben.jpg';
@@ -51,12 +51,12 @@ export const BRIDESMAIDSLIST = [{
   name: 'Mari Johannessen',
 },
 {
-  img: JenImage,
-  title: 'Bridesmaid',
-  name: 'Jennifer Veatch',
-},
-{
   img: EmilyImage,
   title: 'Bridesmaid',
   name: 'Emily Dodson',
+},
+{
+  img: EilishImage,
+  title: 'Bridesmaid',
+  name: 'Eilish Reynolds-Browne',
 }];
